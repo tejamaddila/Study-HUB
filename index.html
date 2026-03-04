@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechNotes Hub — Your B.Tech Companion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@700;900&family=Caveat:wght@600&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mobile-fixes.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════════
+                          NAVBAR
+  ════════════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <a href="#" class="nav-logo" data-route="home">
+        📓 TechNotes<span>Hub</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link active" data-route="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-route="colleges">Colleges</a></li>
+        <li><a href="#" class="nav-link" data-route="events">Events</a></li>
+        <li><a href="#" class="nav-link" data-route="placements">Placements</a></li>
+        <li><a href="#" class="nav-link" data-route="projects">Projects</a></li>
+        <li><a href="#" class="nav-link" data-route="resumes">Best Resumes</a></li>
+        <li><a href="#" class="nav-link nav-link-contact" data-route="contact">Contact Us</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#" class="mobile-link" data-route="home">🏠 Home</a>
+      <a href="#" class="mobile-link" data-route="colleges">🏫 Colleges</a>
+      <a href="#" class="mobile-link" data-route="events">🎉 Events</a>
+      <a href="#" class="mobile-link" data-route="placements">💼 Placements</a>
+      <a href="#" class="mobile-link" data-route="projects">💡 Projects</a>
+      <a href="#" class="mobile-link" data-route="resumes">📄 Best Resumes</a>
+      <a href="#" class="mobile-link" data-route="contact">📬 Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════════
+              SPA MAIN VIEW — ALL PAGES RENDER HERE
+  ════════════════════════════════════════════════════ -->
+  <main id="app">
+
+    <!-- ─────────────────────────────────────────────
+                      HOME PAGE VIEW
+    ───────────────────────────────────────────── -->
+    <section class="page active" id="page-home">
+
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-content">
+          <p class="hero-badge">✨ Built for B.Tech Students</p>
+          <h1 class="hero-title">Your <span>Study Universe</span><br/>Starts Here.</h1>
+          <p class="hero-subtitle">Notes, news, placements & events — all in one clean, beautiful place. Stop scrolling WhatsApp groups. Start studying smart. 📚</p>
+          <div class="hero-buttons">
+            <button class="btn-primary" data-route="colleges">Explore Colleges →</button>
+            <button class="btn-secondary" data-route="events">View Events</button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>12+</strong><span>Colleges</span></div>
+            <div class="stat"><strong>6</strong><span>Branches</span></div>
+            <div class="stat"><strong>500+</strong><span>Notes</span></div>
+            <div class="stat"><strong>100%</strong><span>Free</span></div>
+          </div>
+        </div>
+
+        <!-- FLOATING EMOJI ARENA -->
+        <div class="hero-visual">
+          <div class="orbit-ring ring1"></div>
+          <div class="orbit-ring ring2"></div>
+          <div class="emoji-orb"></div>
+          <div class="emoji-float large"  data-label="Study Notes">📓</div>
+          <div class="emoji-float medium" data-label="Placements">💼</div>
+          <div class="emoji-float large"  data-label="Tech Events">🚀</div>
+          <div class="emoji-float small"  data-label="College News">📰</div>
+          <div class="emoji-float medium" data-label="All Branches">🎓</div>
+          <div class="emoji-float small"  data-label="100% Free">✨</div>
+          <div class="emoji-float medium" data-label="Projects">💡</div>
+          <div class="emoji-float small"  data-label="PYQ Papers">📋</div>
+        </div>
+      </div>
+
+      <!-- INFINITE SCROLLING COLLEGE MARQUEE -->
+      <div class="marquee-section">
+        <p class="marquee-label">🏫 Colleges on TechNotes Hub</p>
+        <div class="marquee-track-wrapper">
+          <div class="marquee-track">
+           <div class="marquee-item">🎓 GMR Institute Of Technology </div>
+            <div class="marquee-item">🎓 MVGR Collage of Engineering</div>
+            <div class="marquee-item">🎓 Lendi Institute of Engineering and Technology</div>
+            <div class="marquee-item">🎓 Raghu Engineering college</div>
+            <div class="marquee-item">🎓 ANITS</div>
+            <div class="marquee-item">🎓 Miracle Educational society group of institutions</div>
+            <div class="marquee-item">🎓 GMR Institute Of Technology </div>
+            <div class="marquee-item">🎓 MVGR Collage of Engineering</div>
+            <div class="marquee-item">🎓 Lendi Institute of Engineering and Technology</div>
+            <div class="marquee-item">🎓 Raghu Engineering college</div>
+            <div class="marquee-item">🎓 ANITS</div>
+            <div class="marquee-item">🎓 Miracle Educational society group of institutions</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEARCH BAR -->
+      <div class="search-section">
+        <h2>Find Your Notes, Fast. ⚡</h2>
+        <p>Search by subject, unit, branch, or college name.</p>
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="e.g. Data Structures, Unit 2, CSE..." />
+          <button class="search-btn">🔍 Search</button>
+        </div>
+        <div class="search-tags">
+          <span class="tag">Data Structures</span>
+          <span class="tag">DBMS</span>
+          <span class="tag">Networks</span>
+          <span class="tag">OS Concepts</span>
+          <span class="tag">Circuit Theory</span>
+          <span class="tag">Thermodynamics</span>
+        </div>
+      </div>
+
+      <!-- FEATURE HIGHLIGHTS -->
+      <div class="features-section">
+        <div class="section-header">
+          <p class="section-badge">⚡ Why TechNotes Hub?</p>
+          <h2>Everything You Need. Nothing You Don't.</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📓</div>
+            <h3>Unit-wise Notes</h3>
+            <p>Perfectly structured, unit by unit, chapter by chapter. No more digging through PDFs.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <h3>Student Projects</h3>
+            <p>Explore real B.Tech final-year projects with source code, reports & documentation.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📄</div>
+            <h3>Best Resumes</h3>
+            <p>Download ATS-friendly resume templates crafted specifically for engineering freshers.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💼</div>
+            <h3>Placement Prep</h3>
+            <p>Drive alerts, company info, and preparation resources updated weekly.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📰</div>
+            <h3>College News</h3>
+            <p>Real-time updates from your campus. No delays, no gossip — just facts.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎉</div>
+            <h3>Tech Events</h3>
+            <p>Hackathons, symposiums, paper presentations — discover every opportunity.</p>
+          </div>
+          <button class="btn-primary" data-route="colleges">Start Exploring →</button>
+        </div>
+      </div>
+
+      <!-- PLACEMENT UPDATES -->
+      <div class="placement-section">
+        <div class="section-header">
+          <p class="section-badge">💼 Placement Updates</p>
+          <h2>Your Next Big Break is Closer Than You Think</h2>
+        </div>
+        <div class="placement-grid">
+          <div class="placement-card">
+            <div class="company-logo">TCS</div>
+            <div class="company-info">
+              <h3>Tata Consultancy Services</h3>
+              <p>Role: System Engineer &nbsp;·&nbsp; Package: ₹3.5 LPA</p>
+              <p>📅 Drive Date: December 15, 2025</p>
+              <p>🏫 Eligible: CSE, IT, EEE (2026 Batch)</p>
+            </div>
+            <span class="placement-status open">Open</span>
+          </div>
+          <div class="placement-card">
+            <div class="company-logo">INFY</div>
+            <div class="company-info">
+              <h3>Infosys Limited</h3>
+              <p>Role: Digital Specialist Engineer &nbsp;·&nbsp; Package: ₹6.5 LPA</p>
+              <p>📅 Drive Date: December 20, 2025</p>
+              <p>🏫 Eligible: All Branches (2026 Batch)</p>
+            </div>
+            <span class="placement-status open">Open</span>
+          </div>
+          <div class="placement-card">
+            <div class="company-logo">WPR</div>
+            <div class="company-info">
+              <h3>Wipro Technologies</h3>
+              <p>Role: Project Engineer &nbsp;·&nbsp; Package: ₹4.5 LPA</p>
+              <p>📅 Drive Date: January 5, 2026</p>
+              <p>🏫 Eligible: CSE, ECE, Mech</p>
+            </div>
+            <span class="placement-status upcoming">Upcoming</span>
+          </div>
+          <div class="placement-card">
+            <div class="company-logo">ZOHO</div>
+            <div class="company-info">
+              <h3>Zoho Corporation</h3>
+              <p>Role: Member Technical Staff &nbsp;·&nbsp; Package: ₹8 LPA</p>
+              <p>📅 Drive Date: January 12, 2026</p>
+              <p>🏫 Eligible: CSE, IT Only</p>
+            </div>
+            <span class="placement-status upcoming">Upcoming</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TECH EVENTS -->
+      <div class="events-section">
+        <div class="section-header">
+          <p class="section-badge">🎉 Inter-College Events</p>
+          <h2>Compete. Connect. Conquer.</h2>
+        </div>
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-date"><span>15</span>DEC</div>
+            <div class="event-info">
+              <h3>HackMania 2025 🚀</h3>
+              <p>36-hour national hackathon. Build anything. Win everything.</p>
+              <p>📍 PSG College of Technology, Coimbatore</p>
+              <div class="event-tags"><span>Hackathon</span><span>₹50K Prize</span><span>Open to All</span></div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-date"><span>22</span>DEC</div>
+            <div class="event-info">
+              <h3>CodeStorm 2025 ⚡</h3>
+              <p>Competitive programming contest — 3 rounds, 500+ participants.</p>
+              <p>📍 VIT Vellore, Tamil Nadu</p>
+              <div class="event-tags"><span>Coding</span><span>₹25K Prize</span><span>CSE / IT</span></div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-date"><span>10</span>JAN</div>
+            <div class="event-info">
+              <h3>TechSympo 2026 🔬</h3>
+              <p>National technical symposium with paper presentations & workshops.</p>
+              <p>📍 Anna University, Chennai</p>
+              <div class="event-tags"><span>Symposium</span><span>All Branches</span><span>Free Entry</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TESTIMONIALS -->
+      <div class="testimonials-section">
+        <div class="section-header">
+          <p class="section-badge">💬 Student Reviews</p>
+          <h2>What Students Say About Us</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p>"TechNotes Hub saved my semester. Unit-wise notes, placement updates — all in one place. This is exactly what we needed!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RK</div>
+              <div>
+                <strong>Rahul Kumar</strong>
+                <span>CSE Final Year, VIT Vellore</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p>"The best resume templates helped me land my TCS interview. Highly recommend the Best Resumes section to every fresher!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PS</div>
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>ECE Third Year, SRM Institute</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Found my final year project idea from TechNotes Hub. The projects section is a goldmine for inspiration and implementation guides."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AV</div>
+              <div>
+                <strong>Arjun Venkat</strong>
+                <span>Mech Final Year, PSG Tech</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+                    COLLEGES PAGE VIEW
+    ───────────────────────────────────────────── -->
+    <section class="page" id="page-colleges">
+      <div class="inner-page">
+        <p class="section-badge">🏫 All Colleges</p>
+        <h2>Pick Your College. Dive Into Your Branch.</h2>
+        <p class="page-subtitle">Click any college below to explore its departments, notes, and resources.</p>
+        <div class="colleges-grid" id="collegesGrid">
+          <!-- Populated by data.js + router.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+                   DEPARTMENT PAGE VIEW
+    ───────────────────────────────────────────── -->
+    <section class="page" id="page-department">
+      <div class="inner-page">
+        <button class="back-btn" id="backBtn">← Back to Colleges</button>
+        <div id="departmentContent">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+                    EVENTS PAGE VIEW
+    ───────────────────────────────────────────── -->
+    <section class="page" id="page-events">
+      <div class="inner-page">
+        <p class="section-badge">🎉 Tech Events</p>
+        <h2>Upcoming Inter-College Events</h2>
+        <p class="page-subtitle">Hackathons, symposiums, coding contests — all in one place.</p>
+        <div class="events-grid full">
+          <div class="event-card">
+            <div class="event-date"><span>15</span>DEC</div>
+            <div class="event-info">
+              <h3>HackMania 2025 🚀</h3>
+              <p>36-hour national hackathon. Build anything. Win everything. Teams of 2–4.</p>
+              <p>📍 PSG College of Technology, Coimbatore</p>
+              <p>🔗 Registration: hackmania2025.in</p>
+              <div class="event-tags"><span>Hackathon</span><span>₹50K Prize</span><span>Open to All</span></div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-date"><span>22</span>DEC</div>
+            <div class="event-info">
+              <h3>CodeStorm 2025 ⚡</h3>
+              <p>3-round competitive programming contest with 500+ registered participants.</p>
+              <p>📍 VIT Vellore, Tamil Nadu</p>
+              <p>🔗 Registration: codestorm.vit.ac.in</p>
+              <div class="event-tags"><span>Coding</span><span>₹25K Prize</span><span>CSE / IT</span></div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-date"><span>10</span>JAN</div>
+            <div class="event-info">
+              <h3>TechSympo 2026 🔬</h3>
+              <p>National technical symposium — paper presentations, workshops & keynotes.</p>
+              <p>📍 Anna University, Chennai</p>
+              <p>🔗 Registration: techsympo.annauniv.edu</p>
+              <div class="event-tags"><span>Symposium</span><span>All Branches</span><span>Free Entry</span></div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-date"><span>18</span>JAN</div>
+            <div class="event-info">
+              <h3>RoboWars 2026 🤖</h3>
+              <p>Combat robotics + automation challenge — engineer your bot, dominate the arena.</p>
+              <p>📍 SRM Institute, Chennai</p>
+              <p>🔗 Registration: robowars.srm.edu.in</p>
+              <div class="event-tags"><span>Robotics</span><span>₹30K Prize</span><span>Mech / ECE</span></div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-date"><span>25</span>JAN</div>
+            <div class="event-info">
+              <h3>DesignThon 2026 🎨</h3>
+              <p>UI/UX design sprint — 24 hours to design the future of EdTech.</p>
+              <p>📍 Kongu Engineering College, Erode</p>
+              <p>🔗 Registration: designthon.kec.ac.in</p>
+              <div class="event-tags"><span>Design</span><span>₹15K Prize</span><span>All Branches</span></div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-date"><span>5</span>FEB</div>
+            <div class="event-info">
+              <h3>CivicThon 2026 🏗️</h3>
+              <p>Civil engineering innovation challenge — sustainable structures & smart cities.</p>
+              <p>📍 Thiagarajar College, Madurai</p>
+              <p>🔗 Registration: civicthon.tce.edu</p>
+              <div class="event-tags"><span>Civil</span><span>₹20K Prize</span><span>Civil / Arch</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+                  PLACEMENTS PAGE VIEW
+    ───────────────────────────────────────────── -->
+    <section class="page" id="page-placements">
+      <div class="inner-page">
+        <p class="section-badge">💼 Placement Hub</p>
+        <h2>Land Your Dream Job. 🎯</h2>
+        <p class="page-subtitle">Real drives, real deadlines, real packages — updated weekly.</p>
+        <div class="placement-grid full">
+          <div class="placement-card">
+            <div class="company-logo">TCS</div>
+            <div class="company-info">
+              <h3>Tata Consultancy Services</h3>
+              <p>Role: System Engineer &nbsp;·&nbsp; Package: ₹3.5 LPA</p>
+              <p>📅 Drive Date: December 15, 2025</p>
+              <p>🏫 Eligible: CSE, IT, EEE (2026 Batch)</p>
+              <p>📝 Process: Aptitude → Technical → HR</p>
+            </div>
+            <span class="placement-status open">Open</span>
+          </div>
+          <div class="placement-card">
+            <div class="company-logo">INFY</div>
+            <div class="company-info">
+              <h3>Infosys Limited</h3>
+              <p>Role: Digital Specialist Engineer &nbsp;·&nbsp; Package: ₹6.5 LPA</p>
+              <p>📅 Drive Date: December 20, 2025</p>
+              <p>🏫 Eligible: All Branches (2026 Batch)</p>
+              <p>📝 Process: InfyTQ Test → Technical → HR</p>
+            </div>
+            <span class="placement-status open">Open</span>
+          </div>
+          <div class="placement-card">
+            <div class="company-logo">WPR</div>
+            <div class="company-info">
+              <h3>Wipro Technologies</h3>
+              <p>Role: Project Engineer &nbsp;·&nbsp; Package: ₹4.5 LPA</p>
+              <p>📅 Drive Date: January 5, 2026</p>
+              <p>🏫 Eligible: CSE, ECE, Mech</p>
+              <p>📝 Process: Online Test → Coding → HR</p>
+            </div>
+            <span class="placement-status upcoming">Upcoming</span>
+          </div>
+          <div class="placement-card">
+            <div class="company-logo">ZOHO</div>
+            <div class="company-info">
+              <h3>Zoho Corporation</h3>
+              <p>Role: Member Technical Staff &nbsp;·&nbsp; Package: ₹8 LPA</p>
+              <p>📅 Drive Date: January 12, 2026</p>
+              <p>🏫 Eligible: CSE, IT Only</p>
+              <p>📝 Process: Written → Technical (3 rounds) → HR</p>
+            </div>
+            <span class="placement-status upcoming">Upcoming</span>
+          </div>
+          <div class="placement-card">
+            <div class="company-logo">CTS</div>
+            <div class="company-info">
+              <h3>Cognizant Technology Solutions</h3>
+              <p>Role: Programmer Analyst &nbsp;·&nbsp; Package: ₹4 LPA</p>
+              <p>📅 Drive Date: January 20, 2026</p>
+              <p>🏫 Eligible: All Branches (2026 Batch)</p>
+              <p>📝 Process: GAME → Coding → Interview</p>
+            </div>
+            <span class="placement-status upcoming">Upcoming</span>
+          </div>
+          <div class="placement-card">
+            <div class="company-logo">AMZN</div>
+            <div class="company-info">
+              <h3>Amazon Development Centre</h3>
+              <p>Role: SDE Intern → Full Time &nbsp;·&nbsp; Package: ₹18 LPA</p>
+              <p>📅 Drive Date: February 1, 2026</p>
+              <p>🏫 Eligible: CSE, IT (CGPA ≥ 8.0)</p>
+              <p>📝 Process: OA → DSA Round × 2 → Bar Raiser</p>
+            </div>
+            <span class="placement-status upcoming">Upcoming</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+                    PROJECTS PAGE VIEW
+    ───────────────────────────────────────────── -->
+    <section class="page" id="page-projects">
+      <div class="inner-page">
+        <p class="section-badge">💡 Student Projects</p>
+        <h2>Explore Final Year & Mini Projects</h2>
+        <p class="page-subtitle">Real B.Tech projects with source code, reports & video demos. Get inspired. Build something great.</p>
+
+        <div class="filter-tabs" id="projectFilter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="cse">CSE / IT</button>
+          <button class="filter-btn" data-filter="ece">ECE</button>
+          <button class="filter-btn" data-filter="mech">Mechanical</button>
+          <button class="filter-btn" data-filter="eee">EEE</button>
+          <button class="filter-btn" data-filter="civil">Civil</button>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card" data-branch="cse">
+            <div class="project-header">
+              <span class="project-branch cse">CSE</span>
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-icon">🤖</div>
+            <h3>AI-Powered Attendance System</h3>
+            <p>Facial recognition based automated attendance marking system using OpenCV and Python Flask backend.</p>
+            <div class="project-tech">
+              <span>Python</span><span>OpenCV</span><span>Flask</span><span>SQLite</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-project-primary">📥 Download Report</a>
+              <a href="#" class="btn-project-secondary">💻 Source Code</a>
+            </div>
+          </div>
+          <div class="project-card" data-branch="cse">
+            <div class="project-header">
+              <span class="project-branch cse">CSE</span>
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-icon">🛒</div>
+            <h3>E-Commerce Price Tracker</h3>
+            <p>Web scraping tool that tracks product prices across Amazon, Flipkart, and alerts users via email when price drops.</p>
+            <div class="project-tech">
+              <span>Python</span><span>BeautifulSoup</span><span>React</span><span>Node.js</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-project-primary">📥 Download Report</a>
+              <a href="#" class="btn-project-secondary">💻 Source Code</a>
+            </div>
+          </div>
+          <div class="project-card" data-branch="ece">
+            <div class="project-header">
+              <span class="project-branch ece">ECE</span>
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-icon">🏠</div>
+            <h3>IoT Smart Home Automation</h3>
+            <p>Complete home automation system using ESP8266 NodeMCU with mobile app control for lights, fans, and security.</p>
+            <div class="project-tech">
+              <span>Arduino</span><span>ESP8266</span><span>MQTT</span><span>Flutter</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-project-primary">📥 Download Report</a>
+              <a href="#" class="btn-project-secondary">💻 Source Code</a>
+            </div>
+          </div>
+          <div class="project-card" data-branch="mech">
+            <div class="project-header">
+              <span class="project-branch mech">Mech</span>
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-icon">🌬️</div>
+            <h3>Solar-Powered Water Purifier</h3>
+            <p>Portable solar-driven water purification unit designed for rural areas. Removes 99.9% of contaminants.</p>
+            <div class="project-tech">
+              <span>Mechanical Design</span><span>Solar Panel</span><span>CAD</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-project-primary">📥 Download Report</a>
+              <a href="#" class="btn-project-secondary">🎥 View Demo</a>
+            </div>
+          </div>
+          <div class="project-card" data-branch="eee">
+            <div class="project-header">
+              <span class="project-branch eee">EEE</span>
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-icon">⚡</div>
+            <h3>Smart Energy Meter</h3>
+            <p>IoT-enabled energy meter that monitors real-time electricity consumption and sends alerts for unusual usage patterns.</p>
+            <div class="project-tech">
+              <span>Arduino</span><span>Current Sensor</span><span>Firebase</span><span>Android</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-project-primary">📥 Download Report</a>
+              <a href="#" class="btn-project-secondary">💻 Source Code</a>
+            </div>
+          </div>
+          <div class="project-card" data-branch="civil">
+            <div class="project-header">
+              <span class="project-branch civil">Civil</span>
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-icon">🏗️</div>
+            <h3>Smart Waste Management System</h3>
+            <p>Sensor-based smart dustbins that notify sanitation workers when full, optimizing collection routes.</p>
+            <div class="project-tech">
+              <span>IoT Sensors</span><span>GIS Mapping</span><span>Route Optimization</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-project-primary">📥 Download Report</a>
+              <a href="#" class="btn-project-secondary">🎥 View Demo</a>
+            </div>
+          </div>
+          <div class="project-card" data-branch="cse">
+            <div class="project-header">
+              <span class="project-branch cse">CSE</span>
+              <span class="project-year">2024</span>
+            </div>
+            <div class="project-icon">💬</div>
+            <h3>Real-Time Chat Application</h3>
+            <p>Full-stack chat app with rooms, private messaging, file sharing, and end-to-end encryption using WebSockets.</p>
+            <div class="project-tech">
+              <span>Socket.io</span><span>Node.js</span><span>React</span><span>MongoDB</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-project-primary">📥 Download Report</a>
+              <a href="#" class="btn-project-secondary">💻 Source Code</a>
+            </div>
+          </div>
+          <div class="project-card" data-branch="ece">
+            <div class="project-header">
+              <span class="project-branch ece">ECE</span>
+              <span class="project-year">2024</span>
+            </div>
+            <div class="project-icon">🚗</div>
+            <h3>Blind Spot Detection System</h3>
+            <p>Ultrasonic sensor-based vehicle blind spot alert system with audio-visual warning for safe lane changing.</p>
+            <div class="project-tech">
+              <span>Arduino</span><span>Ultrasonic</span><span>LCD Display</span><span>Buzzer</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-project-primary">📥 Download Report</a>
+              <a href="#" class="btn-project-secondary">🎥 View Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="submit-cta">
+          <div class="submit-cta-content">
+            <div class="submit-cta-icon">🚀</div>
+            <h3>Have an Amazing Project?</h3>
+            <p>Share your final year or mini project with thousands of B.Tech students. Help others learn and get inspired!</p>
+            <a href="#" class="btn-primary" data-route="contact">Submit Your Project →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+                 BEST RESUMES PAGE VIEW
+    ───────────────────────────────────────────── -->
+    <section class="page" id="page-resumes">
+      <div class="inner-page">
+        <p class="section-badge">📄 Best Resumes</p>
+        <h2>ATS-Friendly Resume Templates 🎯</h2>
+        <p class="page-subtitle">Crafted specifically for B.Tech freshers and experienced engineers. Download, edit, and land interviews.</p>
+
+        <div class="tips-banner">
+          <div class="tips-banner-inner">
+            <span class="tips-icon">💡</span>
+            <div>
+              <strong>Pro Tips for Freshers:</strong>
+              Keep your resume to 1 page · Use action verbs · Quantify your achievements · Tailor it for each job
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-tabs">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">CSE / IT</button>
+          <button class="filter-btn">ECE</button>
+          <button class="filter-btn">Mechanical</button>
+          <button class="filter-btn">EEE</button>
+          <button class="filter-btn">Civil</button>
+        </div>
+
+        <div class="resumes-grid">
+          <div class="resume-card">
+            <div class="resume-preview">
+              <div class="resume-mock">
+                <div class="rm-header"></div>
+                <div class="rm-line long"></div><div class="rm-line short"></div>
+                <div class="rm-divider"></div>
+                <div class="rm-line medium"></div><div class="rm-line long"></div><div class="rm-line short"></div>
+                <div class="rm-divider"></div>
+                <div class="rm-line long"></div><div class="rm-line medium"></div>
+              </div>
+              <div class="resume-overlay"><span>Preview</span></div>
+            </div>
+            <div class="resume-info">
+              <div class="resume-badge cse">CSE / IT</div>
+              <h3>Software Engineer Fresher</h3>
+              <p>Clean, minimal, ATS-optimized. Perfect for product companies and startups.</p>
+              <div class="resume-meta"><span>⬇️ 2.4K downloads</span><span>⭐ 4.9/5</span></div>
+              <a href="#" class="btn-resume-download">📥 Download Free</a>
+            </div>
+          </div>
+          <div class="resume-card featured">
+            <div class="resume-featured-badge">🔥 Most Popular</div>
+            <div class="resume-preview">
+              <div class="resume-mock dark">
+                <div class="rm-header dark"></div>
+                <div class="rm-line long"></div><div class="rm-line short"></div>
+                <div class="rm-divider"></div>
+                <div class="rm-line medium"></div><div class="rm-line long"></div><div class="rm-line short"></div>
+                <div class="rm-divider"></div>
+                <div class="rm-line long"></div><div class="rm-line medium"></div>
+              </div>
+              <div class="resume-overlay"><span>Preview</span></div>
+            </div>
+            <div class="resume-info">
+              <div class="resume-badge cse">CSE / IT</div>
+              <h3>Full-Stack Developer Resume</h3>
+              <p>Modern two-column layout with skills, projects, and internship highlights.</p>
+              <div class="resume-meta"><span>⬇️ 5.1K downloads</span><span>⭐ 5.0/5</span></div>
+              <a href="#" class="btn-resume-download">📥 Download Free</a>
+            </div>
+          </div>
+          <div class="resume-card">
+            <div class="resume-preview">
+              <div class="resume-mock">
+                <div class="rm-header accent"></div>
+                <div class="rm-line long"></div><div class="rm-line short"></div>
+                <div class="rm-divider"></div>
+                <div class="rm-line medium"></div><div class="rm-line long"></div><div class="rm-line short"></div>
+                <div class="rm-divider"></div>
+                <div class="rm-line long"></div><div class="rm-line medium"></div>
+              </div>
+              <div class="resume-overlay"><span>Preview</span></div>
+            </div>
+            <div class="resume-info">
+              <div class="resume-badge ece">ECE</div>
+              <h3>Electronics Engineer Fresher</h3>
+              <p>Highlights embedded systems, VLSI, and signal processing skills.</p>
+              <div class="resume-meta"><span>⬇️ 1.8K downloads</span><span>⭐ 4.8/5</span></div>
+              <a href="#" class="btn-resume-download">📥 Download Free</a>
+            </div>
+          </div>
+          <div class="resume-card">
+            <div class="resume-preview">
+              <div class="resume-mock">
+                <div class="rm-header green"></div>
+                <div class="rm-line long"></div><div class="rm-line short"></div>
+                <div class="rm-divider"></div>
+                <div class="rm-line medium"></div><div class="rm-line long"></div><div class="rm-line short"></div>
+                <div class="rm-divider"></div>
+                <div class="rm-line long"></div><div class="rm-line medium"></div>
+              </div>
+              <div class="resume-overlay"><span>Preview</span></div>
+            </div>
+            <div class="resume-info">
+              <div class="resume-badge mech">Mech</div>
+              <h3>Mechanical Engineer Fresher</h3>
+              <p>Emphasizes CAD skills, project work, and internships.</p>
+              <div class="resume-meta"><span>⬇️ 1.2K downloads</span><span>⭐ 4.7/5</span></div>
+              <a href="#" class="btn-resume-download">📥 Download Free</a>
+            </div>
+          </div>
+          <div class="resume-card">
+            <div class="resume-preview">
+              <div class="resume-mock">
+                <div class="rm-header purple"></div>
+                <div class="rm-line long"></div><div class="rm-line short"></div>
+                <div class="rm-divider"></div>
+                <div class="rm-line medium"></div><div class="rm-line long"></div><div class="rm-line short"></div>
+                <div class="rm-divider"></div>
+                <div class="rm-line long"></div><div class="rm-line medium"></div>
+              </div>
+              <div class="resume-overlay"><span>Preview</span></div>
+            </div>
+            <div class="resume-info">
+              <div class="resume-badge eee">EEE</div>
+              <h3>Electrical Engineer Fresher</h3>
+              <p>Tailored for power systems, drives, and automation roles.</p>
+              <div class="resume-meta"><span>⬇️ 980 downloads</span><span>⭐ 4.8/5</span></div>
+              <a href="#" class="btn-resume-download">📥 Download Free</a>
+            </div>
+          </div>
+          <div class="resume-card">
+            <div class="resume-preview">
+              <div class="resume-mock">
+                <div class="rm-header orange"></div>
+                <div class="rm-line long"></div><div class="rm-line short"></div>
+                <div class="rm-divider"></div>
+                <div class="rm-line medium"></div><div class="rm-line long"></div><div class="rm-line short"></div>
+                <div class="rm-divider"></div>
+                <div class="rm-line long"></div><div class="rm-line medium"></div>
+              </div>
+              <div class="resume-overlay"><span>Preview</span></div>
+            </div>
+            <div class="resume-info">
+              <div class="resume-badge civil">Civil</div>
+              <h3>Civil Engineer Fresher</h3>
+              <p>Professional layout for civil and structural engineering graduates.</p>
+              <div class="resume-meta"><span>⬇️ 760 downloads</span><span>⭐ 4.6/5</span></div>
+              <a href="#" class="btn-resume-download">📥 Download Free</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-tips-section">
+          <div class="section-header">
+            <p class="section-badge">🎯 Resume Tips</p>
+            <h2>Make Your Resume Stand Out</h2>
+          </div>
+          <div class="tips-grid">
+            <div class="tip-card">
+              <div class="tip-num">01</div>
+              <h4>Keep it to 1 Page</h4>
+              <p>Freshers should always stick to a single page. Recruiters spend 7 seconds on average — make every line count.</p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-num">02</div>
+              <h4>Use Strong Action Verbs</h4>
+              <p>Start every bullet with words like "Developed", "Designed", "Implemented", "Optimized".</p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-num">03</div>
+              <h4>Quantify Everything</h4>
+              <p>"Reduced load time by 40%" beats "Improved performance". Numbers grab attention and prove impact.</p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-num">04</div>
+              <h4>Tailor for Each Job</h4>
+              <p>Copy keywords from the job description and mirror them in your resume. ATS systems filter by keyword match.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+                  CONTACT US PAGE VIEW
+    ───────────────────────────────────────────── -->
+    <section class="page" id="page-contact">
+      <div class="inner-page">
+        <p class="section-badge">📬 Get In Touch</p>
+        <h2>We're Here to Help. 🤝</h2>
+        <p class="page-subtitle">Have a question, want to submit notes or projects, or found a bug? Drop us a message!</p>
+
+        <div class="contact-layout">
+          <div class="contact-info">
+            <div class="contact-info-card">
+              <div class="contact-icon">📧</div>
+              <h4>Email Us</h4>
+              <p>support@technoteshub.in</p>
+              <p>submit@technoteshub.in</p>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-icon">📍</div>
+              <h4>Location</h4>
+              <p>Tamil Nadu, India</p>
+              <p>Serving students pan-India 🇮🇳</p>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-icon">🕐</div>
+              <h4>Response Time</h4>
+              <p>Mon – Sat: 9AM – 6PM</p>
+              <p>Usually replies within 24 hours</p>
+            </div>
+            <div class="contact-info-card social-card">
+              <div class="contact-icon">🌐</div>
+              <h4>Follow Us</h4>
+              <div class="contact-socials">
+                <a href="#" class="social-btn">📘 Facebook</a>
+                <a href="#" class="social-btn">🐦 Twitter</a>
+                <a href="#" class="social-btn">📸 Instagram</a>
+                <a href="#" class="social-btn">💼 LinkedIn</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <h3>Send Us a Message</h3>
+            <p class="form-subtext">We read every message. Really. 🙏</p>
+            <div class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Your Name</label>
+                  <input type="text" placeholder="e.g. Rahul Kumar" />
+                </div>
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="email" placeholder="you@college.edu" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>College & Branch</label>
+                <input type="text" placeholder="e.g. VIT Vellore – CSE Final Year" />
+              </div>
+              <div class="form-group">
+                <label>Subject</label>
+                <select>
+                  <option value="">Select a topic...</option>
+                  <option>Submit Notes / PDFs</option>
+                  <option>Submit a Project</option>
+                  <option>Report a Bug</option>
+                  <option>Suggest a Feature</option>
+                  <option>Partnership / Collaboration</option>
+                  <option>General Inquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea placeholder="Tell us what's on your mind..." rows="5"></textarea>
+              </div>
+              <button class="btn-contact-submit">🚀 Send Message</button>
+            </div>
+
+            <div class="contact-faqs">
+              <h4>Frequently Asked Questions</h4>
+              <div class="faq-item">
+                <strong>How do I submit my notes?</strong>
+                <p>Use the form above with subject "Submit Notes / PDFs" and attach your Google Drive link in the message.</p>
+              </div>
+              <div class="faq-item">
+                <strong>Is TechNotes Hub completely free?</strong>
+                <p>Yes — 100% free for all students. No hidden fees, no subscriptions, no ads. Ever. 🎉</p>
+              </div>
+              <div class="faq-item">
+                <strong>How can I get my college added?</strong>
+                <p>Write to us using the form. Include college name, location, and branches offered. We'll add it within 48 hours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════
+                          FOOTER
+  ════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">📓 TechNotes<strong>Hub</strong></span>
+        <p>Your ultimate B.Tech companion — notes, news, placements & everything in between. Built with love for students who grind. 💪</p>
+        <div class="footer-socials">
+          <a href="#">📘 Facebook</a>
+          <a href="#">🐦 Twitter</a>
+          <a href="#">📸 Instagram</a>
+          <a href="#">💼 LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#" data-route="home">🏠 Home</a>
+        <a href="#" data-route="colleges">🏫 Colleges</a>
+        <a href="#" data-route="events">🎉 Events</a>
+        <a href="#" data-route="placements">💼 Placements</a>
+        <a href="#" data-route="projects">💡 Projects</a>
+        <a href="#" data-route="resumes">📄 Best Resumes</a>
+        <a href="#" data-route="contact">📬 Contact Us</a>
+      </div>
+      <div class="footer-links">
+        <h4>Branches</h4>
+        <a href="#">First Year / BHS</a>
+        <a href="#">Computer Science (CSE)</a>
+        <a href="#">Electrical (EEE)</a>
+        <a href="#">Civil Engineering</a>
+        <a href="#">Mechanical</a>
+        <a href="#">Chemical Engineering</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>📧 support@technoteshub.in</p>
+        <p>📬 submit@technoteshub.in</p>
+        <p>📍 Tamil Nadu, India</p>
+        <p>🕐 Mon–Sat: 9AM – 6PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TechNotes Hub — Crafted with ☕ & late-night grind &nbsp;·&nbsp; Made in India 🇮🇳</p>
+      <p style="font-size:0.75rem;opacity:0.6;margin-top:4px;">All college names used for educational purposes only. Not affiliated with any institution.</p>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════════════
+       SCRIPTS — always at bottom, in this exact order
+  ════════════════════════════════════════════════════ -->
+  <script src="data.js"></script>
+  <script src="views.js"></script>
+  <script src="router.js"></script>
+  <script src="paper-bg.js"></script>
+  <script src="intro.js"></script>
+
+</body>
+</html>
